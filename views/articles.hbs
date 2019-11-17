@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<body>
+{{> navbar}}
+<div class="container">
+  <h1 class="text-center">Articles</h1>
+
+  
+<div>
+{{#each articles as |article| }}
+<section class="mb-5">
+<a name="{{id}}">
+  <div class="form-group">
+    
+  <label for="exampleFormControlTextarea1" class="ml-2 " style="font-size:larger;">{{title}} by {{author.name}} </label>
+  <textarea class="form-control rounded-2" id="exampleFormControlTextarea1" rows="10" readonly>{{body}}</textarea>
+  </div>
+  <button id="editBtn">EDIT</button>
+
+  
+
+  <div>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-info">COMMENTS</li>
+   
+    {{!-- <span class="badge badge-primary badge-pill">14</span> --}}
+ {{#each  article.comments as |cmnt|}}
+   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{cmnt.title}}</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">{{cmnt.message}}</p>
+    {{!-- <small class="text-muted">Donec id elit non mi porta.</small> --}}
+  </a>
+ {{/each}}
+  </div>
+ 
+
+</div>
+  </section>
+</a>
+
+{{/each}}
+
+
+</div>
+</body>
+
+</html>

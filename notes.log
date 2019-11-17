@@ -1,0 +1,35 @@
+hbs helper and parital can be used in a situation 
+where suppose we use nav bar and require in a 
+table where it is used in every page
+
+when requiring from a folder import everything to index file and use only folder path in server
+ as by default it will get index.js
+
+
+ transactions in sequelize is used when we have some error in middle of 2 process 
+ then it rollslback automatically
+
+
+
+
+
+
+
+
+
+- add features 
+profile photo,comments,edit articles,remove articles,number of articles by user
+
+
+=>inlcuding number of comments
+=> inlcuding commentor name
+=> container not inlcuding everything
+=> images
+=>passportJS
+
+
+bare-metal=> handling hardware on your own
+Iaas=>( infra as a service)=> ex-AWS,digitalOcean,google cloud engine,Azure ,,,,,these are responsible for only infra not OS or code of program also called Virtual private server
+paas=>(platform as a service)=> ex- heroku ,,,, these are responsible for infra + software but not code
+
+baas=>( backend as a service)=> ex-firebase ,,, they create backend for us.       

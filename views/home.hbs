@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<body>
+
+  {{> navbar}}
+
+  <div class="container">
+  <h1 class="text-center">Welcome to Blogpedia</h1>
+    <h2 class="text-center"> {{title}} </h2>
+
+
+    {{!-- New Article Form --}}
+    <h2>Add an Article</h2>
+    {{> new_article_form}}
+
+    {{!-- Article List --}}
+    <h2> An Insight of Articles </h2>
+    {{#each articles as |article|}}
+      {{> article_card article}}
+    {{/each}}
+
+  </div>
+</body>
+</html>
