@@ -22,7 +22,5 @@ const PORT = process.env.PORT || 9988
 
 
 db.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log('http://localhost:9988')
-  })
+  app.listen(PORT)
 }).catch(console.error)            
